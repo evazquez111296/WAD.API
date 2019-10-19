@@ -1,0 +1,17 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="nombrepaquete" 
+                 namespace="/Users" 
+                 extends="json-default">
+                <action name="Login" 
+                        method="onJson"
+                        class="mx.ipn.escom.wad.proyect.usersactionsuport.LoginActionSupport" >
+			<result type="json" name="json">
+                            <param name="root">userResponse</param>
+                        </result>
+		</action>
+	</package>
+</struts>
